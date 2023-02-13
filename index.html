@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Tennis Score Input</title>
+        <script>
+            var content = [];
+function addtoarray() {
+    var x = document.getElementById("form1");
+    var text = "";
+    var i;
+        for (i = 0; i < x.length-1 ;i++) {
+            content.push(x.elements[i].value);
+        }
+    console.log(content);
+}
+        </script>
+    </head>
+    <body>
+        <form id="form1" action="index.html" onsubmit="python.py" method="POST">
+            <label for="Player">Player Name</label><br>
+            <input type="text" name="Player" id="Player"><br>
+            
+            <label for="MathLength">Match Length (minutes)</label><br>
+            <input type="number" name="MathLength" id="MathLength"><br>
+            
+            <label for="Opponent">Opponent Name</label><br>
+            <input type="text" name="Opponent" id="Opponent"><br>
+            
+            <label for="OpponentTeam">Opponent Team</label><br>
+            <input type="text" name="OpponentTeam" id="OpponentTeam"><br>
+
+            <label for="OpponentGrade">Opponent Grade</label>
+            <select id="OpponentGrade" name="OpponentGrade">
+                <option value="Freshman">Freshman</option>
+                <option value="Sophomore">Sophomore</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+              </select><br>
+
+            <label for="Line">Line Played</label>
+            <select id="Line" name="Line">
+                <option value="1Singles">1st Singles</option>
+                <option value="2Singles">2nd Singles</option>
+                <option value="3Singles">3rd Singles</option>
+                <option value="1Doubles">1st Doubles</option>
+                <option value="2Doubles">2nd Doubles</option>
+              </select><br>
+
+            <label for="Weather">Weather</label>
+            <select id="Weather" name="Weather">
+                <option value="Sunny">Sunny</option>
+                <option value="PartialClouds">Partially Cloady</option>
+                <option value="Cloady">Cloudy</option>
+                <option value="Indoor">Indoor</option>
+              </select><br>
+
+            <label for="CourtNumber">Court Number</label><br>
+            <input type="text" name="CourtNumber" id="CourtNumber"><br>
+            
+            <label for="Region">Region Game</label><br>
+            <input type="text" name="Region" id="Region"><br>
+            
+            <label for="Caffeine">Caffeine</label><br>
+            <input type="text" name="Caffeine" id="Caffeine"><br>
+
+            <label for="Breakfast">Breakfast</label><br>
+            <input type="text" name="Breakfast" id="Breakfast"><br>
+            
+            <label for="Lunch">Lunch</label><br>
+            <input type="text" name="Lunch" id="Lunch"><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
